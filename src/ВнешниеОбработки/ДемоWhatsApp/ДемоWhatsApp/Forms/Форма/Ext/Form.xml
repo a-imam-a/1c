@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Page name="ГруппаЧаты" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чаты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа чаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЧатыРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<Button name="ДобавитьНовыйЧат" id="15">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ДобавитьНовыйЧат</CommandName>
+							<TextColor>style:FieldSelectedTextColor</TextColor>
+							<BackColor>#00C700</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedTooltip name="ДобавитьНовыйЧатРасширеннаяПодсказка" id="16"/>
+						</Button>
+						<UsualGroup name="ГруппаСписокЧатов" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список чатов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список чатов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСписокЧатовРасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОтправкаСообщения" id="19">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отправка сообщения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отправка сообщения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтправкаСообщенияРасширеннаяПодсказка" id="20"/>
+									<ChildItems>
+										<Table name="Номера" id="37">
+											<Representation>List</Representation>
+											<Header>false</Header>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<DataPath>Номера</DataPath>
+											<RowPictureDataPath>Номера.Picture</RowPictureDataPath>
+											<ContextMenu name="НомераКонтекстноеМеню" id="38"/>
+											<AutoCommandBar name="НомераКоманднаяПанель" id="39">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="НомераРасширеннаяПодсказка" id="40"/>
+											<SearchStringAddition name="НомераСтрокаПоиска" id="41">
+												<AdditionSource>
+													<Item>Номера</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НомераСтрокаПоискаКонтекстноеМеню" id="42"/>
+												<ExtendedTooltip name="НомераСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="НомераСостояниеПросмотра" id="44">
+												<AdditionSource>
+													<Item>Номера</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НомераСостояниеПросмотраКонтекстноеМеню" id="45"/>
+												<ExtendedTooltip name="НомераСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="НомераУправлениеПоиском" id="47">
+												<AdditionSource>
+													<Item>Номера</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="НомераУправлениеПоискомКонтекстноеМеню" id="48"/>
+												<ExtendedTooltip name="НомераУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">НомераПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="НомераЗначение" id="50">
+													<DataPath>Номера.Value</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+													<ContextMenu name="НомераЗначениеКонтекстноеМеню" id="51"/>
+													<ExtendedTooltip name="НомераЗначениеРасширеннаяПодсказка" id="52"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+										<InputField name="ТекстСообщения" id="53">
+											<DataPath>ТекстСообщения</DataPath>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТекстСообщенияКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ТекстСообщенияРасширеннаяПодсказка" id="55"/>
+										</InputField>
+										<Button name="ОтправитьСообщение" id="56">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОтправитьСообщение</CommandName>
+											<TextColor>style:FieldSelectedTextColor</TextColor>
+											<BackColor>#00C700</BackColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<ExtendedTooltip name="ОтправитьСообщениеРасширеннаяПодсказка" id="57"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<TextDocumentField name="ИсторияПерепискиПоТекущемуЧату" id="21">
+									<DataPath>ИсторияПерепискиПоТекущемуЧату</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ИсторияПерепискиПоТекущемуЧатуКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ИсторияПерепискиПоТекущемуЧатуРасширеннаяПодсказка" id="23"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПолучитьСообщение" id="58">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьСообщение</CommandName>
+							<TextColor>style:FieldSelectedTextColor</TextColor>
+							<BackColor>#00C700</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получить новое сообщение</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПолучитьСообщениеРасширеннаяПодсказка" id="59"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаУчетныеДанные" id="13">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ваши учетные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа учетные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаУчетныеДанныеРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<InputField name="idInstance" id="4">
+							<DataPath>Объект.IdInstance</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="idInstanceКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="idInstanceРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="apiTokenInstance" id="1">
+							<DataPath>Объект.apiTokenInstance</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="apiTokenInstanceКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="apiTokenInstanceРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ДемоWhatsApp</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИсторияПерепискиПоТекущемуЧату" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История переписки по текущему чату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Номера" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСообщения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьНовыйЧат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить новый чат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить новый чат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьНовыйЧат</Action>
+		</Command>
+		<Command name="ОтправитьСообщение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщение</Action>
+		</Command>
+		<Command name="ПолучитьСообщение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСообщение</Action>
+		</Command>
+	</Commands>
+</Form>
